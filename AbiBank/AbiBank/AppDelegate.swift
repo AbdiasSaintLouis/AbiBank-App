@@ -11,16 +11,66 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
+    let loginViewController = LoginViewController()
+    let onboardingViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-//        window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingContainerViewController()
-//        window?.rootViewController = OnboardingViewController(heroImageName: "AbiBank Fast Money", titleText: "AbiBank é mais rápido, fácil de usar e tem um visual totalmente novo para ajudar você a gerenciar seu dinheiro com segurança e acompanhar seus gastos para melhorar suas finanças.")
         
+        loginViewController.delegate = self
+        onboardingViewController.delegate = self
+        dummyViewController.logoutDelegate = self
+        
+        window?.rootViewController = loginViewController
+//        window?.rootViewController = onboardingViewController
+//        window?.rootViewController = AccountSummaryViewController()
+//        window?.rootViewController = OnboardingContainerViewController()
+
         return true
+    }
+}
+
+extension AppDelegate {
+    func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard animated, let window = self.window else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window,
+                          duration: 0.9,
+                          options: .transitionCrossDissolve,
+                          animations: nil,
+                          completion: nil)
+    }
+}
+
+extension AppDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        if LocalState.hasOnboarded {
+            setRootViewController(dummyViewController)
+        } else {
+            setRootViewController(onboardingViewController)
+        }
+    }
+}
+
+extension AppDelegate: OnboardingContainerViewControllerDelegate {
+    func didFinishOnboarding() {
+        LocalState.hasOnboarded = true
+        setRootViewController(dummyViewController)
+    }
+}
+
+extension AppDelegate: LogoutDelegate {
+    func didLogout() {
+        setRootViewController(loginViewController)
     }
 }

@@ -20,16 +20,15 @@ class LoginView: UIView {
         
         style()
         layout()
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(codder:) has not been implemented")
     }
     
-//    override var intrinsicContentSize: CGSize {
-//        return CGSize(width: 200, height: 200)
-//    }
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: UIView.noIntrinsicMetric)
+    }
 }
 
 
@@ -66,7 +65,8 @@ extension LoginView {
         stackView.addArrangedSubview(passwordTextField)
         
         addSubview(stackView)
-       
+        
+       // Stackview
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
