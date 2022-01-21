@@ -18,9 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
 //        window?.rootViewController = LoginViewController()
-//        window?.rootViewController = OnboardingContainerViewController()
-        window?.rootViewController = OnboardingViewController()
-        
+        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingViewController(heroImageName: "AbiBank Fast Money", titleText: "AbiBank é mais rápido, fácil de usar e tem um visual totalmente novo para ajudar você a gerenciar seu dinheiro com segurança e acompanhar seus gastos para melhorar suas finanças.")
         
         return true
     }

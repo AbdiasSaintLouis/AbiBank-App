@@ -12,17 +12,32 @@ class OnboardingViewController: UIViewController {
     let stackView = UIStackView()
     let imageView = UIImageView()
     let label = UILabel()
+    
+    let heroImageName: String
+    let titleText: String
 
 override func viewDidLoad() {
     super.viewDidLoad()
     style()
     layout()
     
+}
+    
+    init(heroImageName: String, titleText: String) {
+        self.heroImageName = heroImageName
+        self.titleText = titleText
+        
+        super.init(nibName: nil, bundle: nil)
   }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 extension OnboardingViewController {
     func style() {
+    view.backgroundColor = .systemBackground
+        
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.spacing = 5
@@ -30,7 +45,7 @@ extension OnboardingViewController {
     // Image
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "AbiBank Fast Money")
+        imageView.image = UIImage(named: heroImageName)
         
     
     // Label
@@ -43,7 +58,7 @@ extension OnboardingViewController {
         label.font = UIFont.preferredFont(forTextStyle: .title3)
         label.adjustsFontForContentSizeCategory = true
         label.numberOfLines = 0
-        label.text = "AbiBank é mais rápido, fácil de usar e tem um visual totalmente novo para ajudar você a gerenciar seu dinheiro com segurança e acompanhar seus gastos para melhorar suas finanças."
+        label.text = titleText
     
 }
 

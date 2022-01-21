@@ -19,9 +19,12 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = ViewController1()
-        let page2 = ViewController2()
-        let page3 = ViewController3()
+        
+        let page1 = OnboardingViewController(heroImageName: "AbiBankCircleLogo", titleText: "AbiBank is faster, easier to use, and has a brand new look to help you manage your money safely, and track your spending to improve your finances.")
+        
+        let page2 = OnboardingViewController(heroImageName: "AbiBank Fast Money", titleText: "Move your money around the world quickly and securely.")
+        
+        let page3 = OnboardingViewController(heroImageName: "AbiBank Worldwide", titleText: "Learn more at www.abibank.com.br")
         
         pages.append(page1)
         pages.append(page2)
@@ -39,7 +42,7 @@ class OnboardingContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPurple
+        view.backgroundColor = .systemGray
         
         addChild(pageViewController)
         view.addSubview(pageViewController.view)
@@ -92,24 +95,24 @@ extension OnboardingContainerViewController: UIPageViewControllerDataSource {
     }
 }
 
-// MARK: - ViewControllers
-class ViewController1: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemRed
-    }
-}
-
-class ViewController2: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-    }
-}
-
-class ViewController3: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-    }
-}
+//// MARK: - ViewControllers
+//class ViewController1: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemRed
+//    }
+//}
+//
+//class ViewController2: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemGreen
+//    }
+//}
+//
+//class ViewController3: UIViewController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = .systemBlue
+//    }
+//}
