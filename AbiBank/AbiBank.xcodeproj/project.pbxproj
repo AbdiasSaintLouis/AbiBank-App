@@ -16,6 +16,8 @@
 		19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */; };
 		19FB30D9279B51420038F435 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D8279B51420038F435 /* LocalState.swift */; };
 		19FB30DB279B55030038F435 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30DA279B55030038F435 /* DummyViewController.swift */; };
+		19FB30DD279C3CC80038F435 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30DC279C3CC80038F435 /* UIViewController+Utils.swift */; };
+		19FB30DF279C3F3F0038F435 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30DE279C3F3F0038F435 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		19FB30D8279B51420038F435 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		19FB30DA279B55030038F435 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		19FB30DC279C3CC80038F435 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		19FB30DE279C3F3F0038F435 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,12 @@
 		19530787279910C80086906B /* AbiBank */ = {
 			isa = PBXGroup;
 			children = (
-				19FB30D7279B51000038F435 /* Util */,
-				19FB30D2279AE5050038F435 /* Onboarding */,
-				1953079C279917C60086906B /* Files */,
-				1953079E279919080086906B /* Login */,
 				19530788279910C80086906B /* AppDelegate.swift */,
+				1953079E279919080086906B /* Login */,
+				19FB30D2279AE5050038F435 /* Onboarding */,
+				19FB30D7279B51000038F435 /* Util */,
+				1953079C279917C60086906B /* Files */,
+				19FB30DE279C3F3F0038F435 /* MainViewController.swift */,
 			);
 			path = AbiBank;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				19FB30D8279B51420038F435 /* LocalState.swift */,
+				19FB30DC279C3CC80038F435 /* UIViewController+Utils.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -178,11 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FB30DD279C3CC80038F435 /* UIViewController+Utils.swift in Sources */,
 				19FB30DB279B55030038F435 /* DummyViewController.swift in Sources */,
 				195307A0279919AE0086906B /* LoginView.swift in Sources */,
 				19FB30D9279B51420038F435 /* LocalState.swift in Sources */,
 				1953078D279910C80086906B /* LoginViewController.swift in Sources */,
 				19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */,
+				19FB30DF279C3F3F0038F435 /* MainViewController.swift in Sources */,
 				19530789279910C80086906B /* AppDelegate.swift in Sources */,
 				19FB30D4279AE5860038F435 /* OnboardingContainerViewController.swift in Sources */,
 			);
