@@ -18,6 +18,7 @@
 		19D1B3DF279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3DE279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift */; };
 		19D1B3E1279E416900EB54C5 /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3E0279E416800EB54C5 /* DecimalUtils.swift */; };
 		19D1B3E3279E420200EB54C5 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3E2279E420200EB54C5 /* CurrencyFormatter.swift */; };
+		19D1B3EB279E4DD400EB54C5 /* AbiBankUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3EA279E4DD400EB54C5 /* AbiBankUnitTests.swift */; };
 		19FB30D4279AE5860038F435 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */; };
 		19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */; };
 		19FB30D9279B51420038F435 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D8279B51420038F435 /* LocalState.swift */; };
@@ -25,6 +26,16 @@
 		19FB30DD279C3CC80038F435 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30DC279C3CC80038F435 /* UIViewController+Utils.swift */; };
 		19FB30DF279C3F3F0038F435 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30DE279C3F3F0038F435 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D1B3EC279E4DD400EB54C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1953077D279910C80086906B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19530784279910C80086906B;
+			remoteInfo = AbiBank;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19530785279910C80086906B /* AbiBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbiBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +51,8 @@
 		19D1B3DE279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift; sourceTree = "<group>"; };
 		19D1B3E0279E416800EB54C5 /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		19D1B3E2279E420200EB54C5 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		19D1B3E8279E4DD400EB54C5 /* AbiBankUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbiBankUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D1B3EA279E4DD400EB54C5 /* AbiBankUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbiBankUnitTests.swift; sourceTree = "<group>"; };
 		19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		19FB30D8279B51420038F435 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
@@ -56,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19D1B3E5279E4DD300EB54C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				19530787279910C80086906B /* AbiBank */,
+				19D1B3E9279E4DD400EB54C5 /* AbiBankUnitTests */,
 				19530786279910C80086906B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				19530785279910C80086906B /* AbiBank.app */,
+				19D1B3E8279E4DD400EB54C5 /* AbiBankUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +158,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		19D1B3E9279E4DD400EB54C5 /* AbiBankUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D1B3EA279E4DD400EB54C5 /* AbiBankUnitTests.swift */,
+			);
+			path = AbiBankUnitTests;
+			sourceTree = "<group>";
+		};
 		19FB30D2279AE5050038F435 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +206,24 @@
 			productReference = 19530785279910C80086906B /* AbiBank.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19D1B3E7279E4DD300EB54C5 /* AbiBankUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D1B3EE279E4DD400EB54C5 /* Build configuration list for PBXNativeTarget "AbiBankUnitTests" */;
+			buildPhases = (
+				19D1B3E4279E4DD300EB54C5 /* Sources */,
+				19D1B3E5279E4DD300EB54C5 /* Frameworks */,
+				19D1B3E6279E4DD300EB54C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D1B3ED279E4DD400EB54C5 /* PBXTargetDependency */,
+			);
+			name = AbiBankUnitTests;
+			productName = AbiBankUnitTests;
+			productReference = 19D1B3E8279E4DD400EB54C5 /* AbiBankUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,6 +236,10 @@
 				TargetAttributes = {
 					19530784279910C80086906B = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					19D1B3E7279E4DD300EB54C5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 19530784279910C80086906B;
 					};
 				};
 			};
@@ -205,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				19530784279910C80086906B /* AbiBank */,
+				19D1B3E7279E4DD300EB54C5 /* AbiBankUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +270,13 @@
 				19D1B3DB279DF5AF00EB54C5 /* AccountSummaryHeaderView.xib in Resources */,
 				19530795279910CB0086906B /* LaunchScreen.storyboard in Resources */,
 				19530792279910CB0086906B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D1B3E6279E4DD300EB54C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +304,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19D1B3E4279E4DD300EB54C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D1B3EB279E4DD400EB54C5 /* AbiBankUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D1B3ED279E4DD400EB54C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19530784279910C80086906B /* AbiBank */;
+			targetProxy = 19D1B3EC279E4DD400EB54C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19530793279910CB0086906B /* LaunchScreen.storyboard */ = {
@@ -428,6 +504,42 @@
 			};
 			name = Release;
 		};
+		19D1B3EF279E4DD400EB54C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KN4FD2693;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abi.ENG.Dev.AbiBankUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AbiBank.app/AbiBank";
+			};
+			name = Debug;
+		};
+		19D1B3F0279E4DD400EB54C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KN4FD2693;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abi.ENG.Dev.AbiBankUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AbiBank.app/AbiBank";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +557,15 @@
 			buildConfigurations = (
 				1953079A279910CB0086906B /* Debug */,
 				1953079B279910CB0086906B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D1B3EE279E4DD400EB54C5 /* Build configuration list for PBXNativeTarget "AbiBankUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D1B3EF279E4DD400EB54C5 /* Debug */,
+				19D1B3F0279E4DD400EB54C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
