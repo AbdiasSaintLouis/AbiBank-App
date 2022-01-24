@@ -15,6 +15,7 @@
 		19D1B3D7279DF36200EB54C5 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3D6279DF36200EB54C5 /* AccountSummaryViewController.swift */; };
 		19D1B3D9279DF4B700EB54C5 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3D8279DF4B700EB54C5 /* AccountSummaryHeaderView.swift */; };
 		19D1B3DB279DF5AF00EB54C5 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19D1B3DA279DF5AF00EB54C5 /* AccountSummaryHeaderView.xib */; };
+		19D1B3DF279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3DE279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift */; };
 		19FB30D4279AE5860038F435 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */; };
 		19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */; };
 		19FB30D9279B51420038F435 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D8279B51420038F435 /* LocalState.swift */; };
@@ -34,6 +35,7 @@
 		19D1B3D6279DF36200EB54C5 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		19D1B3D8279DF4B700EB54C5 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		19D1B3DA279DF5AF00EB54C5 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		19D1B3DE279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift; sourceTree = "<group>"; };
 		19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		19FB30D8279B51420038F435 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
@@ -107,10 +109,27 @@
 			isa = PBXGroup;
 			children = (
 				19D1B3D6279DF36200EB54C5 /* AccountSummaryViewController.swift */,
+				19D1B3DC279E028100EB54C5 /* Header */,
+				19D1B3DD279E02E600EB54C5 /* Cells */,
+			);
+			name = AccountSummary;
+			sourceTree = "<group>";
+		};
+		19D1B3DC279E028100EB54C5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
 				19D1B3D8279DF4B700EB54C5 /* AccountSummaryHeaderView.swift */,
 				19D1B3DA279DF5AF00EB54C5 /* AccountSummaryHeaderView.xib */,
 			);
-			name = AccountSummary;
+			name = Header;
+			sourceTree = "<group>";
+		};
+		19D1B3DD279E02E600EB54C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19D1B3DE279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		19FB30D2279AE5050038F435 /* Onboarding */ = {
@@ -210,6 +229,7 @@
 				1953078D279910C80086906B /* LoginViewController.swift in Sources */,
 				19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */,
 				19FB30DF279C3F3F0038F435 /* MainViewController.swift in Sources */,
+				19D1B3DF279E036E00EB54C5 /* AccountSummaryCellAccountSummaryCellAccountSummaryCell.swift in Sources */,
 				19D1B3D7279DF36200EB54C5 /* AccountSummaryViewController.swift in Sources */,
 				19530789279910C80086906B /* AppDelegate.swift in Sources */,
 				19FB30D4279AE5860038F435 /* OnboardingContainerViewController.swift in Sources */,
