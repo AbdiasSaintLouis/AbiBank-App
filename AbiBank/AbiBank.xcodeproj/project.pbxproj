@@ -24,6 +24,8 @@
 		19D1B3F7279F11D300EB54C5 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3F6279F11D300EB54C5 /* ShakeyBellView.swift */; };
 		19D1B3F9279F89F000EB54C5 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3F8279F89F000EB54C5 /* Date+Utils.swift */; };
 		19D1B3FB279F8BA400EB54C5 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3FA279F8BA400EB54C5 /* AccountSummaryViewController+Networking.swift */; };
+		19D1B3FF279FA25D00EB54C5 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B3FE279FA25D00EB54C5 /* ProfileTests.swift */; };
+		19D1B401279FA86200EB54C5 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1B400279FA86100EB54C5 /* AccountTests.swift */; };
 		19FB30D4279AE5860038F435 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */; };
 		19FB30D6279AEE8E0038F435 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */; };
 		19FB30D9279B51420038F435 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FB30D8279B51420038F435 /* LocalState.swift */; };
@@ -63,6 +65,8 @@
 		19D1B3F6279F11D300EB54C5 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		19D1B3F8279F89F000EB54C5 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		19D1B3FA279F8BA400EB54C5 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		19D1B3FE279FA25D00EB54C5 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		19D1B400279FA86100EB54C5 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		19FB30D3279AE5860038F435 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		19FB30D5279AEE8E0038F435 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		19FB30D8279B51420038F435 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
@@ -173,7 +177,8 @@
 		19D1B3E9279E4DD400EB54C5 /* AbiBankUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				19D1B3EA279E4DD400EB54C5 /* AbiBankUnitTests.swift */,
+				19D1B3FD279F9E0900EB54C5 /* AccountSummary */,
+				19D1B3FC279F9CAA00EB54C5 /* Utils */,
 			);
 			path = AbiBankUnitTests;
 			sourceTree = "<group>";
@@ -184,6 +189,23 @@
 				19D1B3F6279F11D300EB54C5 /* ShakeyBellView.swift */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		19D1B3FC279F9CAA00EB54C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19D1B3EA279E4DD400EB54C5 /* AbiBankUnitTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		19D1B3FD279F9E0900EB54C5 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				19D1B3FE279FA25D00EB54C5 /* ProfileTests.swift */,
+				19D1B400279FA86100EB54C5 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		19FB30D2279AE5050038F435 /* Onboarding */ = {
@@ -337,6 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D1B3EB279E4DD400EB54C5 /* AbiBankUnitTests.swift in Sources */,
+				19D1B401279FA86200EB54C5 /* AccountTests.swift in Sources */,
+				19D1B3FF279FA25D00EB54C5 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
