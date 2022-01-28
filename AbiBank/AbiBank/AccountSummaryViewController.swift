@@ -136,6 +136,7 @@ extension AccountSummaryViewController {
                 self.profile = profile
             case .failure(let error):
                 self.displayError(error)
+                
             }
             group.leave()
         }
